@@ -16,6 +16,10 @@ function App() {
             {" "}
             increase count by 1
           </button>
+          <button onClick={() => setCount((count) => count - 1)}>
+            {" "}
+            decrease count by 1
+          </button>
         </div>
         <div className="two">
           <p>{countFive} </p>
@@ -23,12 +27,20 @@ function App() {
             {" "}
             increase count by 5
           </button>
+          <button onClick={() => setCountFive((countFive) => countFive - 5)}>
+            {" "}
+            decrease count by 5
+          </button>
         </div>
         <div className="three">
           <p>{countTen} </p>
           <button onClick={() => setCountTen((countTen) => countTen + 10)}>
             {" "}
             increase count by 10
+          </button>
+          <button onClick={() => setCountTen((countTen) => countTen - 10)}>
+            {" "}
+            decrease count by 10
           </button>
         </div>
         <div className="four">
@@ -39,6 +51,14 @@ function App() {
             }
           >
             increase count by 100
+          </button>
+          <button
+            onClick={() =>
+              setCountHundred((countHundred) => countHundred - 100)
+            }
+          >
+            {" "}
+            decrease count by 100
           </button>
         </div>
       </div>
